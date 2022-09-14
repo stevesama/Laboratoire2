@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/monTexte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:gravity="top"
+        android:text="@string/informationsmembre" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_personne"
+            android:layout_width="150dp"
+            android:layout_height="244dp"
+            android:layout_marginRight="0dp"
+            android:gravity="top"
+            app:srcCompat="@drawable/image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_nom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="top"
+                android:hint="@string/nom"
+                android:inputType="textCapWords" />
+
+            <EditText
+                android:id="@+id/et_courriel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:hint="@string/courriel"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="top"
+                android:hint="@string/phone"
+                android:inputType="text|number" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="244dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <CheckBox
+            android:id="@+id/chk_showpassword"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="@string/showpassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_confirmpassword"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/confirmpassword"
+            android:inputType="textPassword" />
+
+        <CheckBox
+            android:id="@+id/chk_confirmpassword"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:text="@string/showconfirmpassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chk_messageacceptation"
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="@string/messageacceptation" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_sauvegarder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/sauvegarder" />
+
+        <Button
+            android:id="@+id/btn_quitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="@string/quitter" />
+    </RelativeLayout>
+
+
+</LinearLayout>

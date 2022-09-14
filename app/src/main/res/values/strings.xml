@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Laboratoire2-Frank Npemegue</string>
+    <string name="informationsmembre">Informations d\'un membre</string>
+    <string name="nom">Nom Complet</string>
+    <string name="courriel">Courriel</string>
+    <string name="phone">Téléphone</string>
+    <string name="password">Mot de passe</string>
+    <string name="showpassword">Afficher</string>
+    <string name="confirmpassword">Confirmation mot de passe</string>
+    <string name="showconfirmpassword">Afficher</string>
+    <string name="messageacceptation">J\'accepte de recevoir l\'infolettre pour les nouveaux événements.</string>
+    <string name="sauvegarder">SAUVEGARDER</string>
+    <string name="quitter">QUITTER</string>
+</resources>
